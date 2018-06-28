@@ -1,0 +1,816 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0324FAF120E4B1050053ABED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0324FAF020E4B1050053ABED /* AppDelegate.m */; };
+		0324FAF420E4B1050053ABED /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0324FAF320E4B1050053ABED /* ViewController.m */; };
+		0324FAF720E4B1050053ABED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0324FAF520E4B1050053ABED /* Main.storyboard */; };
+		0324FAF920E4B1100053ABED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0324FAF820E4B1100053ABED /* Assets.xcassets */; };
+		0324FAFC20E4B1100053ABED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0324FAFA20E4B1100053ABED /* LaunchScreen.storyboard */; };
+		0324FAFF20E4B1100053ABED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0324FAFE20E4B1100053ABED /* main.m */; };
+		0324FB0920E4B1100053ABED /* HZUrlLinkTextDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0324FB0820E4B1100053ABED /* HZUrlLinkTextDemoTests.m */; };
+		0324FB1420E4B1100053ABED /* HZUrlLinkTextDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0324FB1320E4B1100053ABED /* HZUrlLinkTextDemoUITests.m */; };
+		0324FB2A20E4B1310053ABED /* HZLinkCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0324FB2320E4B1310053ABED /* HZLinkCell.m */; };
+		0324FB2B20E4B1310053ABED /* HZLinkTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0324FB2520E4B1310053ABED /* HZLinkTextView.m */; };
+		0324FB2C20E4B1310053ABED /* HZWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0324FB2720E4B1310053ABED /* HZWebViewController.m */; };
+		0324FB2D20E4B1310053ABED /* NSString+UrlArr.m in Sources */ = {isa = PBXBuildFile; fileRef = 0324FB2920E4B1310053ABED /* NSString+UrlArr.m */; };
+		843DADC05536A082173B86CA /* libPods-HZUrlLinkTextDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FFE34425A63FA530BD57421 /* libPods-HZUrlLinkTextDemo.a */; };
+		8D551647680FF62A29DD3B1C /* libPods-HZUrlLinkTextDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4E53B29EDE368C5254B9411 /* libPods-HZUrlLinkTextDemoUITests.a */; };
+		E87FCE93981DDE81F4C511C6 /* libPods-HZUrlLinkTextDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ABEF1845B897C303D86946B /* libPods-HZUrlLinkTextDemoTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0324FB0520E4B1100053ABED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0324FAE420E4B1050053ABED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0324FAEB20E4B1050053ABED;
+			remoteInfo = HZUrlLinkTextDemo;
+		};
+		0324FB1020E4B1100053ABED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0324FAE420E4B1050053ABED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0324FAEB20E4B1050053ABED;
+			remoteInfo = HZUrlLinkTextDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0324FAEC20E4B1050053ABED /* HZUrlLinkTextDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HZUrlLinkTextDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0324FAEF20E4B1050053ABED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0324FAF020E4B1050053ABED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0324FAF220E4B1050053ABED /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0324FAF320E4B1050053ABED /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0324FAF620E4B1050053ABED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0324FAF820E4B1100053ABED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0324FAFB20E4B1100053ABED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0324FAFD20E4B1100053ABED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0324FAFE20E4B1100053ABED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0324FB0420E4B1100053ABED /* HZUrlLinkTextDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HZUrlLinkTextDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0324FB0820E4B1100053ABED /* HZUrlLinkTextDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZUrlLinkTextDemoTests.m; sourceTree = "<group>"; };
+		0324FB0A20E4B1100053ABED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0324FB0F20E4B1100053ABED /* HZUrlLinkTextDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HZUrlLinkTextDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0324FB1320E4B1100053ABED /* HZUrlLinkTextDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZUrlLinkTextDemoUITests.m; sourceTree = "<group>"; };
+		0324FB1520E4B1100053ABED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0324FB2220E4B1310053ABED /* HZLinkCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZLinkCell.h; sourceTree = "<group>"; };
+		0324FB2320E4B1310053ABED /* HZLinkCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZLinkCell.m; sourceTree = "<group>"; };
+		0324FB2420E4B1310053ABED /* HZLinkTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZLinkTextView.h; sourceTree = "<group>"; };
+		0324FB2520E4B1310053ABED /* HZLinkTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZLinkTextView.m; sourceTree = "<group>"; };
+		0324FB2620E4B1310053ABED /* HZWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZWebViewController.h; sourceTree = "<group>"; };
+		0324FB2720E4B1310053ABED /* HZWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZWebViewController.m; sourceTree = "<group>"; };
+		0324FB2820E4B1310053ABED /* NSString+UrlArr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+UrlArr.h"; sourceTree = "<group>"; };
+		0324FB2920E4B1310053ABED /* NSString+UrlArr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+UrlArr.m"; sourceTree = "<group>"; };
+		1DB7C40060B9F55BFE3FF33A /* Pods-HZUrlLinkTextDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HZUrlLinkTextDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HZUrlLinkTextDemo/Pods-HZUrlLinkTextDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		3ABEF1845B897C303D86946B /* libPods-HZUrlLinkTextDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HZUrlLinkTextDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		506C2AF09D3DA8F5E2147D61 /* Pods-HZUrlLinkTextDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HZUrlLinkTextDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HZUrlLinkTextDemoUITests/Pods-HZUrlLinkTextDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		87C03351BEFE70A8FFEC8AE0 /* Pods-HZUrlLinkTextDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HZUrlLinkTextDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HZUrlLinkTextDemoUITests/Pods-HZUrlLinkTextDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8FFE34425A63FA530BD57421 /* libPods-HZUrlLinkTextDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HZUrlLinkTextDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7DA65DCBC5D584F1C825B85 /* Pods-HZUrlLinkTextDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HZUrlLinkTextDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-HZUrlLinkTextDemo/Pods-HZUrlLinkTextDemo.release.xcconfig"; sourceTree = "<group>"; };
+		D4E53B29EDE368C5254B9411 /* libPods-HZUrlLinkTextDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HZUrlLinkTextDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7DF5D3B41EE8138FD35E4CE /* Pods-HZUrlLinkTextDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HZUrlLinkTextDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HZUrlLinkTextDemoTests/Pods-HZUrlLinkTextDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		F9066385DB405CA169C3FBE9 /* Pods-HZUrlLinkTextDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HZUrlLinkTextDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HZUrlLinkTextDemoTests/Pods-HZUrlLinkTextDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0324FAE920E4B1050053ABED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				843DADC05536A082173B86CA /* libPods-HZUrlLinkTextDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0324FB0120E4B1100053ABED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E87FCE93981DDE81F4C511C6 /* libPods-HZUrlLinkTextDemoTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0324FB0C20E4B1100053ABED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D551647680FF62A29DD3B1C /* libPods-HZUrlLinkTextDemoUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0324FAE320E4B1050053ABED = {
+			isa = PBXGroup;
+			children = (
+				0324FAEE20E4B1050053ABED /* HZUrlLinkTextDemo */,
+				0324FB0720E4B1100053ABED /* HZUrlLinkTextDemoTests */,
+				0324FB1220E4B1100053ABED /* HZUrlLinkTextDemoUITests */,
+				0324FAED20E4B1050053ABED /* Products */,
+				DC28FFE1F59A74B232DFE4DE /* Pods */,
+				DC1B8598473AC08427FC5ED9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0324FAED20E4B1050053ABED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0324FAEC20E4B1050053ABED /* HZUrlLinkTextDemo.app */,
+				0324FB0420E4B1100053ABED /* HZUrlLinkTextDemoTests.xctest */,
+				0324FB0F20E4B1100053ABED /* HZUrlLinkTextDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0324FAEE20E4B1050053ABED /* HZUrlLinkTextDemo */ = {
+			isa = PBXGroup;
+			children = (
+				0324FB2120E4B1310053ABED /* LinkViewDemo */,
+				0324FAEF20E4B1050053ABED /* AppDelegate.h */,
+				0324FAF020E4B1050053ABED /* AppDelegate.m */,
+				0324FAF220E4B1050053ABED /* ViewController.h */,
+				0324FAF320E4B1050053ABED /* ViewController.m */,
+				0324FAF520E4B1050053ABED /* Main.storyboard */,
+				0324FAF820E4B1100053ABED /* Assets.xcassets */,
+				0324FAFA20E4B1100053ABED /* LaunchScreen.storyboard */,
+				0324FAFD20E4B1100053ABED /* Info.plist */,
+				0324FAFE20E4B1100053ABED /* main.m */,
+			);
+			path = HZUrlLinkTextDemo;
+			sourceTree = "<group>";
+		};
+		0324FB0720E4B1100053ABED /* HZUrlLinkTextDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				0324FB0820E4B1100053ABED /* HZUrlLinkTextDemoTests.m */,
+				0324FB0A20E4B1100053ABED /* Info.plist */,
+			);
+			path = HZUrlLinkTextDemoTests;
+			sourceTree = "<group>";
+		};
+		0324FB1220E4B1100053ABED /* HZUrlLinkTextDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0324FB1320E4B1100053ABED /* HZUrlLinkTextDemoUITests.m */,
+				0324FB1520E4B1100053ABED /* Info.plist */,
+			);
+			path = HZUrlLinkTextDemoUITests;
+			sourceTree = "<group>";
+		};
+		0324FB2120E4B1310053ABED /* LinkViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				0324FB2220E4B1310053ABED /* HZLinkCell.h */,
+				0324FB2320E4B1310053ABED /* HZLinkCell.m */,
+				0324FB2420E4B1310053ABED /* HZLinkTextView.h */,
+				0324FB2520E4B1310053ABED /* HZLinkTextView.m */,
+				0324FB2620E4B1310053ABED /* HZWebViewController.h */,
+				0324FB2720E4B1310053ABED /* HZWebViewController.m */,
+				0324FB2820E4B1310053ABED /* NSString+UrlArr.h */,
+				0324FB2920E4B1310053ABED /* NSString+UrlArr.m */,
+			);
+			path = LinkViewDemo;
+			sourceTree = "<group>";
+		};
+		DC1B8598473AC08427FC5ED9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8FFE34425A63FA530BD57421 /* libPods-HZUrlLinkTextDemo.a */,
+				3ABEF1845B897C303D86946B /* libPods-HZUrlLinkTextDemoTests.a */,
+				D4E53B29EDE368C5254B9411 /* libPods-HZUrlLinkTextDemoUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC28FFE1F59A74B232DFE4DE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1DB7C40060B9F55BFE3FF33A /* Pods-HZUrlLinkTextDemo.debug.xcconfig */,
+				B7DA65DCBC5D584F1C825B85 /* Pods-HZUrlLinkTextDemo.release.xcconfig */,
+				F9066385DB405CA169C3FBE9 /* Pods-HZUrlLinkTextDemoTests.debug.xcconfig */,
+				E7DF5D3B41EE8138FD35E4CE /* Pods-HZUrlLinkTextDemoTests.release.xcconfig */,
+				506C2AF09D3DA8F5E2147D61 /* Pods-HZUrlLinkTextDemoUITests.debug.xcconfig */,
+				87C03351BEFE70A8FFEC8AE0 /* Pods-HZUrlLinkTextDemoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0324FAEB20E4B1050053ABED /* HZUrlLinkTextDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0324FB1820E4B1100053ABED /* Build configuration list for PBXNativeTarget "HZUrlLinkTextDemo" */;
+			buildPhases = (
+				56599E8ED4FF438601E30B0E /* [CP] Check Pods Manifest.lock */,
+				0324FAE820E4B1050053ABED /* Sources */,
+				0324FAE920E4B1050053ABED /* Frameworks */,
+				0324FAEA20E4B1050053ABED /* Resources */,
+				BEA4F330F9727150A4B47D29 /* [CP] Embed Pods Frameworks */,
+				1FE0975B45DBCD7A1F86A5D9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HZUrlLinkTextDemo;
+			productName = HZUrlLinkTextDemo;
+			productReference = 0324FAEC20E4B1050053ABED /* HZUrlLinkTextDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0324FB0320E4B1100053ABED /* HZUrlLinkTextDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0324FB1B20E4B1100053ABED /* Build configuration list for PBXNativeTarget "HZUrlLinkTextDemoTests" */;
+			buildPhases = (
+				B443520634A45E1105B584B2 /* [CP] Check Pods Manifest.lock */,
+				0324FB0020E4B1100053ABED /* Sources */,
+				0324FB0120E4B1100053ABED /* Frameworks */,
+				0324FB0220E4B1100053ABED /* Resources */,
+				0CB3ECA5B8A64E41988C34F7 /* [CP] Embed Pods Frameworks */,
+				ACCB1E809C1F48E775362282 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0324FB0620E4B1100053ABED /* PBXTargetDependency */,
+			);
+			name = HZUrlLinkTextDemoTests;
+			productName = HZUrlLinkTextDemoTests;
+			productReference = 0324FB0420E4B1100053ABED /* HZUrlLinkTextDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0324FB0E20E4B1100053ABED /* HZUrlLinkTextDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0324FB1E20E4B1100053ABED /* Build configuration list for PBXNativeTarget "HZUrlLinkTextDemoUITests" */;
+			buildPhases = (
+				81CE9B0395275AA84714EFBA /* [CP] Check Pods Manifest.lock */,
+				0324FB0B20E4B1100053ABED /* Sources */,
+				0324FB0C20E4B1100053ABED /* Frameworks */,
+				0324FB0D20E4B1100053ABED /* Resources */,
+				BC692976EA3C03AA1ABED00B /* [CP] Embed Pods Frameworks */,
+				65628C90277A42BE3703C024 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0324FB1120E4B1100053ABED /* PBXTargetDependency */,
+			);
+			name = HZUrlLinkTextDemoUITests;
+			productName = HZUrlLinkTextDemoUITests;
+			productReference = 0324FB0F20E4B1100053ABED /* HZUrlLinkTextDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0324FAE420E4B1050053ABED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = huazhuo;
+				TargetAttributes = {
+					0324FAEB20E4B1050053ABED = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					0324FB0320E4B1100053ABED = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 0324FAEB20E4B1050053ABED;
+					};
+					0324FB0E20E4B1100053ABED = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 0324FAEB20E4B1050053ABED;
+					};
+				};
+			};
+			buildConfigurationList = 0324FAE720E4B1050053ABED /* Build configuration list for PBXProject "HZUrlLinkTextDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0324FAE320E4B1050053ABED;
+			productRefGroup = 0324FAED20E4B1050053ABED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0324FAEB20E4B1050053ABED /* HZUrlLinkTextDemo */,
+				0324FB0320E4B1100053ABED /* HZUrlLinkTextDemoTests */,
+				0324FB0E20E4B1100053ABED /* HZUrlLinkTextDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0324FAEA20E4B1050053ABED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0324FAFC20E4B1100053ABED /* LaunchScreen.storyboard in Resources */,
+				0324FAF920E4B1100053ABED /* Assets.xcassets in Resources */,
+				0324FAF720E4B1050053ABED /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0324FB0220E4B1100053ABED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0324FB0D20E4B1100053ABED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0CB3ECA5B8A64E41988C34F7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HZUrlLinkTextDemoTests/Pods-HZUrlLinkTextDemoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1FE0975B45DBCD7A1F86A5D9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HZUrlLinkTextDemo/Pods-HZUrlLinkTextDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56599E8ED4FF438601E30B0E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HZUrlLinkTextDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65628C90277A42BE3703C024 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HZUrlLinkTextDemoUITests/Pods-HZUrlLinkTextDemoUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81CE9B0395275AA84714EFBA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HZUrlLinkTextDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACCB1E809C1F48E775362282 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HZUrlLinkTextDemoTests/Pods-HZUrlLinkTextDemoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B443520634A45E1105B584B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HZUrlLinkTextDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC692976EA3C03AA1ABED00B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HZUrlLinkTextDemoUITests/Pods-HZUrlLinkTextDemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BEA4F330F9727150A4B47D29 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HZUrlLinkTextDemo/Pods-HZUrlLinkTextDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0324FAE820E4B1050053ABED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0324FAF420E4B1050053ABED /* ViewController.m in Sources */,
+				0324FAFF20E4B1100053ABED /* main.m in Sources */,
+				0324FAF120E4B1050053ABED /* AppDelegate.m in Sources */,
+				0324FB2D20E4B1310053ABED /* NSString+UrlArr.m in Sources */,
+				0324FB2B20E4B1310053ABED /* HZLinkTextView.m in Sources */,
+				0324FB2A20E4B1310053ABED /* HZLinkCell.m in Sources */,
+				0324FB2C20E4B1310053ABED /* HZWebViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0324FB0020E4B1100053ABED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0324FB0920E4B1100053ABED /* HZUrlLinkTextDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0324FB0B20E4B1100053ABED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0324FB1420E4B1100053ABED /* HZUrlLinkTextDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0324FB0620E4B1100053ABED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0324FAEB20E4B1050053ABED /* HZUrlLinkTextDemo */;
+			targetProxy = 0324FB0520E4B1100053ABED /* PBXContainerItemProxy */;
+		};
+		0324FB1120E4B1100053ABED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0324FAEB20E4B1050053ABED /* HZUrlLinkTextDemo */;
+			targetProxy = 0324FB1020E4B1100053ABED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0324FAF520E4B1050053ABED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0324FAF620E4B1050053ABED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0324FAFA20E4B1100053ABED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0324FAFB20E4B1100053ABED /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0324FB1620E4B1100053ABED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0324FB1720E4B1100053ABED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0324FB1920E4B1100053ABED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DB7C40060B9F55BFE3FF33A /* Pods-HZUrlLinkTextDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J36ZY42JY9;
+				INFOPLIST_FILE = HZUrlLinkTextDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wowjoy.HZUrlLinkTextDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0324FB1A20E4B1100053ABED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7DA65DCBC5D584F1C825B85 /* Pods-HZUrlLinkTextDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J36ZY42JY9;
+				INFOPLIST_FILE = HZUrlLinkTextDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wowjoy.HZUrlLinkTextDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0324FB1C20E4B1100053ABED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9066385DB405CA169C3FBE9 /* Pods-HZUrlLinkTextDemoTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J36ZY42JY9;
+				INFOPLIST_FILE = HZUrlLinkTextDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wowjoy.HZUrlLinkTextDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HZUrlLinkTextDemo.app/HZUrlLinkTextDemo";
+			};
+			name = Debug;
+		};
+		0324FB1D20E4B1100053ABED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7DF5D3B41EE8138FD35E4CE /* Pods-HZUrlLinkTextDemoTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J36ZY42JY9;
+				INFOPLIST_FILE = HZUrlLinkTextDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wowjoy.HZUrlLinkTextDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HZUrlLinkTextDemo.app/HZUrlLinkTextDemo";
+			};
+			name = Release;
+		};
+		0324FB1F20E4B1100053ABED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 506C2AF09D3DA8F5E2147D61 /* Pods-HZUrlLinkTextDemoUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J36ZY42JY9;
+				INFOPLIST_FILE = HZUrlLinkTextDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wowjoy.HZUrlLinkTextDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HZUrlLinkTextDemo;
+			};
+			name = Debug;
+		};
+		0324FB2020E4B1100053ABED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87C03351BEFE70A8FFEC8AE0 /* Pods-HZUrlLinkTextDemoUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J36ZY42JY9;
+				INFOPLIST_FILE = HZUrlLinkTextDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wowjoy.HZUrlLinkTextDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HZUrlLinkTextDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0324FAE720E4B1050053ABED /* Build configuration list for PBXProject "HZUrlLinkTextDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0324FB1620E4B1100053ABED /* Debug */,
+				0324FB1720E4B1100053ABED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0324FB1820E4B1100053ABED /* Build configuration list for PBXNativeTarget "HZUrlLinkTextDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0324FB1920E4B1100053ABED /* Debug */,
+				0324FB1A20E4B1100053ABED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0324FB1B20E4B1100053ABED /* Build configuration list for PBXNativeTarget "HZUrlLinkTextDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0324FB1C20E4B1100053ABED /* Debug */,
+				0324FB1D20E4B1100053ABED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0324FB1E20E4B1100053ABED /* Build configuration list for PBXNativeTarget "HZUrlLinkTextDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0324FB1F20E4B1100053ABED /* Debug */,
+				0324FB2020E4B1100053ABED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0324FAE420E4B1050053ABED /* Project object */;
+}
